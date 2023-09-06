@@ -12,9 +12,10 @@ struct Pet: Codable {
     var birthday = Date()
     var lastMeal: Date
     var lastDrink: Date
+    var maxAge: Int = 10000
     var age: Int {
-        let timeSine = calculateTimeSince(data: birthday)
-        return timeSine
+        let timeSince = calculateTimeSince(data: birthday)
+        return timeSince % maxAge
     }
     
     var happinessLevel: String {

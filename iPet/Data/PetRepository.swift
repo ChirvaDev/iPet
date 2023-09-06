@@ -19,7 +19,7 @@ class PetRepository {
                 return
             }
         }
-        self.pet = Pet(name: "Kitik", lastMeal: Date(), lastDrink: Date())
+        self.pet = Pet(name: "Leo", lastMeal: Date(), lastDrink: Date())
         
     }
     
